@@ -20,7 +20,7 @@ public class Composition {
         System.out.println(doubleToString.apply(16.30));
 
         Function<Double, String> doubleToStringTypeJava = intToString.compose(doubleToInt);
-        System.out.println(doubleToStringTypeJava);
+        System.out.println(doubleToStringTypeJava.apply(16.30));
 
     }
 }
